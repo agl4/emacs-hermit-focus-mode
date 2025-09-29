@@ -1,5 +1,16 @@
 ;;; hermit-focus-mode.el --- Switch to focused writing environment
 
+
+;; x-release-please-start-version
+
+;; Author: Attila GOLONCSER <agl@glnc.hu>
+;; Maintainer: Attila GOLONCSER <agl@glnc.hu>
+;; Version: 1.0.0
+;; Package-Requires: ((emacs "27.1"))
+;; Created: 2025
+;; Homepage: https://github.com/agl4/emacs-hermit-focus-mode.git
+;; Keywords: local
+
 ;;; Commentary:
 ;;
 ;; This mode improves a bit over Olivetti-s clean writing environment by closing
@@ -16,6 +27,8 @@
 ;; Credit should go to https://lucidmanager.org/productivity/ricing-org-mode/
 
 ;;; Code:
+
+;; x-release-please-end
 
 (require 'olivetti)
 (require 'hide-mode-line)
