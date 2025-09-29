@@ -1,27 +1,27 @@
-;;; hermit-focus-mode.el --- Create a focused writing environment
+;;; hermit-focus-mode.el --- Switch to focused writing environment
 
 ;;; Commentary:
+;;
 ;; This mode improves a bit over Olivetti-s clean writing environment by closing
 ;; all the opened windows except the focused ones, making the text bigger and
 ;; also hide modelines.
-;; 
+;;
 ;; As you see this is not really a plugin but stiching together some existing
 ;; modules to create an even cleaner environment for writing text.
-;; 
+;;
 ;; The mode provides some defaults on how the text is showed, for further tuning
 ;; on how the text body looks like, see `olivetti' bindings, for the size of the
-;; text see `default-text-scale' bindings.
+;; text see `text-scale-increase' and `text-scale-decrease' bindings.
 
 ;;; Code:
 
 (require 'olivetti)
 (require 'hide-mode-line)
-(require 'default-text-scale)
 
 (define-minor-mode hermit-focus-mode
-  ""
+  "Switch to a focused writing environment"
   nil
-  " P "
+  "Focus"
   nil
   (if hermit-focus-mode
       (progn

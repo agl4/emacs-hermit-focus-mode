@@ -3,5 +3,4 @@
   "1.0.0"
   "Docstring"
   '((olivetti "")
-    (default-text-scale "")
     (hide-mode-line "")))
