@@ -40,4 +40,4 @@
       (text-scale-decrease 2))))
 
 (provide 'hermit-focus-mode)
-;; hermit-focus-mode.el ends here
+;;; hermit-focus-mode.el ends here

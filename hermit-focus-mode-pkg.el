@@ -1,6 +1,6 @@
 (define-package
   "focus"
   "1.0.0"
-  "Docstring"
+  "Switch to focused writing environment"
   '((olivetti "")
     (hide-mode-line "")))
