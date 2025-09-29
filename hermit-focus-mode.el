@@ -12,6 +12,8 @@
 ;; The mode provides some defaults on how the text is showed, for further tuning
 ;; on how the text body looks like, see `olivetti' bindings, for the size of the
 ;; text see `text-scale-increase' and `text-scale-decrease' bindings.
+;;
+;; Credit should go to https://lucidmanager.org/productivity/ricing-org-mode/
 
 ;;; Code:
 
