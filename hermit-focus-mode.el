@@ -5,7 +5,7 @@
 ;; Author: Attila GOLONCSER <agl@glnc.hu>
 ;; Maintainer: Attila GOLONCSER <agl@glnc.hu>
 ;; Version: 0.0.1
-;; Package-Requires: ((emacs "27.1"))
+;; Package-Requires: ((emacs "27.1") (olivetti "2.0.7") (hide-mode-line "1.0.3"))
 ;; Created: 2025
 ;; Homepage: https://github.com/agl4/emacs-hermit-focus-mode.git
 ;; Keywords: local
