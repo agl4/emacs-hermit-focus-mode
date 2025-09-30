@@ -32,6 +32,7 @@
 (require 'olivetti)
 (require 'hide-mode-line)
 
+;;;###autoload
 (define-minor-mode hermit-focus-mode
   "Toggle to a focused writing environment."
   :lighter "Focus"
