@@ -1,4 +1,5 @@
-;;; hermit-focus-mode.el --- Switch to focused writing environment
+;;; hermit-focus-mode.el --- Toggle to focused writing environment -*- coding: utf-8; lexical-binding: t -*-
+
 
 
 ;; x-release-please-start-version
@@ -13,18 +14,18 @@
 
 ;;; Commentary:
 ;;
-;; This mode improves a bit over Olivetti-s clean writing environment by closing
-;; all the opened windows except the focused ones, making the text bigger and
-;; also hide modelines.
+;; This minor mode builds on Olivetti's focused writing environment.  It closes
+;; other windows, enlarges the buffer text, and hides modelines to create a
+;; minimal, distraction-free writing workspace.
 ;;
-;; As you see this is not really a plugin but stiching together some existing
-;; modules to create an even cleaner environment for writing text.
+;; Rather than introducing new functionality, this package composes existing
+;; modules to provide a more compact writing environment.
 ;;
-;; The mode provides some defaults on how the text is showed, for further tuning
-;; on how the text body looks like, see `olivetti' bindings, for the size of the
-;; text see `text-scale-increase' and `text-scale-decrease' bindings.
+;; To further adjust layout and appearance, use the `olivetti' keybindings.  To
+;; change text size, use the `text-scale-increase' and `text-scale-decrease'
+;; commands.
 ;;
-;; Credit should go to https://lucidmanager.org/productivity/ricing-org-mode/
+;; Heavily based on this article: https://lucidmanager.org/productivity/ricing-org-mode/
 
 ;;; Code:
 
@@ -34,10 +35,8 @@
 (require 'hide-mode-line)
 
 (define-minor-mode hermit-focus-mode
-  "Switch to a focused writing environment"
-  nil
-  "Focus"
-  nil
+  "Toggle to a focused writing environment."
+  :lighter "Focus"
   (if hermit-focus-mode
       (progn
         (window-configuration-to-register
