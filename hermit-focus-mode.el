@@ -1,12 +1,10 @@
 ;;; hermit-focus-mode.el --- Toggle to focused writing environment -*- coding: utf-8; lexical-binding: t -*-
 
-
-
 ;; x-release-please-start-version
 
 ;; Author: Attila GOLONCSER <agl@glnc.hu>
 ;; Maintainer: Attila GOLONCSER <agl@glnc.hu>
-;; Version: 1.0.0
+;; Version: 0.0.1
 ;; Package-Requires: ((emacs "27.1"))
 ;; Created: 2025
 ;; Homepage: https://github.com/agl4/emacs-hermit-focus-mode.git
